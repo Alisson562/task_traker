@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <h1>Task Traker</h1>
+
+        <form class="search-form">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar...">
+            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="t1 tarefa">
+            <input type="checkbox" id="t1" class="tarefa" name="t1" checked />
+            <label for="t1">Tarefa 1</label>
+            <i class="fa-solid fa-trash" onclick="deletarTarefa('t1')"></i>
+        </div>
+
+        <div class="t2 tarefa">
+            <input type="checkbox" id="t2" name="t2" />
+            <label for="t2">Tarefa 2</label>
+            <i class="fa-solid fa-trash" onclick="deletarTarefa('t2')"></i>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
